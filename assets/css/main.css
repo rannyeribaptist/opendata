@@ -1,0 +1,79 @@
+/* default css attributes for all screen sizes */
+html, body {
+  font-family: din-2014, sans-serif;
+  height: 100%;
+  color: white;
+}
+.presentation {
+  background: linear-gradient(to bottom, #3c8e89, #317672);
+  min-height: 100%;
+  text-align: center;
+  padding-top: 7%;
+}
+.presentation-inner {
+  max-width: 50%;
+}
+.slide {
+  text-align: left;
+  font-weight: 300;
+  display: inline !important;
+}
+.logo {
+  content: url('../images/logo.png');
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .logo {
+    max-width: 70%;
+  }
+  .slide {
+    font-size: 15px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logo {
+    max-width: 50%;
+  }
+  .slide {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide {
+    font-size: 25px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .slide {
+    font-size: 25px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .logo {
+    margin-bottom: 10px;
+  }
+  .slide {
+    font-size: 27px;
+  }
+}
+
+/* 4k screens or higher */
+@media (min-width: 2559.98px) {
+  .logo {
+    margin-bottom: 40px;
+    min-width: 30%;
+  }
+  .slide {
+    font-size: 37px;
+  }
+}
