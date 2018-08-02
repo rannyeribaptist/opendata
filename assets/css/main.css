@@ -1,27 +1,104 @@
 /* default css attributes for all screen sizes */
 html, body {
   font-family: din-2014, sans-serif;
+  font-weight: 300;
   height: 100%;
   color: white;
 }
+/* First section */
 .presentation {
   background: linear-gradient(to bottom, #3c8e89, #317672);
   min-height: 100%;
   text-align: center;
   padding-top: 7%;
 }
-.presentation-inner {
-  max-width: 50%;
+.presentation .inner {
+  max-width: 50% !important;
 }
 .slide {
   text-align: left;
-  font-weight: 300;
   display: inline !important;
 }
 .logo {
   content: url('../images/logo.png');
 }
+/* End of First section */
 
+/* Second section */
+.graph {
+  background-color: #333;
+  height: 40%;
+}
+/* End of Second section */
+
+/* Third section */
+.map {
+  background: linear-gradient(to bottom, #3c8e89, #317672);
+  height: 40%;
+}
+/* End of Third section */
+
+/* Fourth section */
+.tabs {
+  background-color: #f07125;
+  border-top: 40px solid #ef6b26;
+  height: 40%;
+}
+/* End of Fourth section */
+
+/* Fifth section */
+.partners {
+  height: 40%;
+}
+/* End of Fifth section */
+
+/* Sixth section */
+.footer {
+  background-color: #333333;
+  text-align: center;
+  padding-top: 5%;
+}
+.footer h4 {
+  font-weight: 300;
+}
+.footer .col {
+  text-align: left;
+}
+.footer a {
+  color: white;
+}
+.footer p {
+  margin-bottom: 5px;
+}
+.footer small {
+  color: #828282;
+  font-size: 70%;
+}
+.footer hr {
+  border-bottom: 1px solid #5d5d5d85;
+}
+.foot {
+  height: 40px;
+  box-shadow: 0px 1px 50px #111111b0;
+  margin-top: 20px;
+  text-align: right;
+}
+.foot small {
+  position: relative;
+  top: 20%;
+  right: 15px;
+  font-weight: 200;
+}
+/* End of Sixth section */
+
+/* General */
+.inner {
+  max-width: 65%;
+}
+.w-100 {
+  padding-top: 20px;
+}
+/* End of General */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
