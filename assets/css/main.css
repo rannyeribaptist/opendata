@@ -18,9 +18,11 @@ html, body {
 .slide {
   text-align: left;
   display: inline !important;
+  font-size: 15px;
 }
 .logo {
   content: url('../images/logo.png');
+  max-width: 50%;
 }
 /* End of First section */
 
@@ -47,8 +49,90 @@ html, body {
 /* End of Fourth section */
 
 /* Fifth section */
+/* .partners { */
+/*   color: #6a6a6a; */
+/*   text-align: center; */
+/*   padding-top: 105px; */
+/*   padding-bottom: 105px; */
+/*   font-size: 20px; */
+/* } */
+/* .partners h1 { */
+/*   font-weight: 200; */
+/*   font-size: 55px; */
+/* } */
+/* .partners p { */
+/*   margin-top: 20px; */
+/* } */
+/* .partners .row { */
+/*   margin-top: 20px; */
+/* } */
+/* .partners .w-100 { */
+/*   margin-top: 50px; */
+/* } */
+/* .dp-logo { */
+/*   max-width: 100px; */
+/*   content: url('../images/dp.svg'); */
+/*   float: left; */
+/*   margin-left: 15%; */
+/* } */
+/* .ukaid-logo { */
+/*   max-width: 75px; */
+/*   content: url('../images/ukaid.png'); */
+/*   float: right; */
+/*   margin-right: 20%; */
+/* } */
+/* .canada-logo { */
+/*   max-width: 300px; */
+/*   content: url('../images/canada.svg'); */
+/*   position: relative; */
+/*   top: 25%; */
+/* } */
+/* .irdc-logo { */
+/*   max-width: 300px; */
+/*   content: url('../images/irdc.png'); */
+/* } */
+/* .wb-logo { */
+/*   max-width: 300px; */
+/*   content: url('../images/world_bank-logo.png'); */
+/* } */
+/* End of Fifth section */
+/* Fifth section */
 .partners {
-  height: 40%;
+  color: #6a6a6a;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+.partners h1 {
+  font-weight: 200;
+  font-size: 55px;
+}
+.partners p {
+  margin-top: 20px;
+}
+.partners img {
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+.irdc-logo {
+  content: url('../images/irdc.png');
+}
+.canada-logo {
+  content: url('../images/canada.svg');
+}
+.wb-logo {
+  content: url('../images/world_bank-logo.png');
+}
+.dp-logo {
+  max-height: 60px;
+  content: url('../images/dp.svg');
+  float: left;
+}
+.ukaid-logo {
+  max-height: 60px;
+  content: url('../images/ukaid.png');
+  float: right;
 }
 /* End of Fifth section */
 
@@ -91,46 +175,48 @@ html, body {
 }
 /* End of Sixth section */
 
-/* General */
 .inner {
-  max-width: 65%;
+  max-width: 90%;
 }
-.w-100 {
-  padding-top: 20px;
-}
-/* End of General */
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  .logo {
-    max-width: 70%;
-  }
-  .slide {
-    font-size: 15px;
-  }
-}
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) {
   .logo {
     max-width: 50%;
   }
   .slide {
     font-size: 20px;
   }
+  .inner {
+    max-width: 90%;
+  }
+  .canada-logo {
+    position: relative;
+    top: 15%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) {
   .slide {
     font-size: 25px;
+  }
+  .inner {
+    max-width: 70%;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) {
   .slide {
     font-size: 25px;
+  }
+  .inner {
+    max-width: 65%;
+  }
+  .dp-logo, .ukaid-logo {
+    max-height: 80px;
   }
 }
 
@@ -142,6 +228,22 @@ html, body {
   .slide {
     font-size: 27px;
   }
+  .w-100 {
+    padding-top: 20px;
+  }
+  .partners {
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+  .partners img {
+    max-width: 70%;
+  }
+  .dp-logo {
+    margin-left: 15%;
+  }
+  .ukaid-logo {
+    margin-right: 15%;
+  }
 }
 
 /* 4k screens or higher */
@@ -152,5 +254,17 @@ html, body {
   }
   .slide {
     font-size: 37px;
+  }
+  .partners h1 {
+    font-size: 75px;
+  }
+  .partners p {
+    font-size: 40px;
+  }
+  .dp-logo {
+    min-height: 120px;
+  }
+  .ukaid-logo {
+    min-height: 120px;
   }
 }
