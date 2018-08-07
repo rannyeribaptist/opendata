@@ -43,59 +43,84 @@ html, body {
 /* Fourth section */
 .tabs {
   background-color: #f07125;
-  border-top: 40px solid #ef6b26;
-  height: 40%;
+  display: flex;
+	flex-direction: column;
+}
+.tabs h1 {
+  font-weight: 200;
+  font-size: 25px;
+}
+.tab {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	padding: 5px;
+}
+.tab-border {
+  background-color: #ef6b26;
+  color: #993c14;
+  font-size: 18px;
+  line-height: 50px;
+  vertical-align: middle;
+	padding-left: 5%;
+}
+.tab-title-border {
+  height: 100%;
+  width: 50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.tab-title {
+	padding-left: 20%;
+	white-space: nowrap;
+}
+.tab-title h1 {
+	transform: translateY(10%);
+}
+.tab-content {
+  display: none;
+	box-shadow: 0px -5px 5px #00000014, 0px 5px 5px #00000014;
+	position: relative;
+}
+.tab-content-inner {
+	text-align: center;
+	padding: 5px;
+}
+.tab-content h1 {
+	font-size: 30px;
+}
+.tab-content img {
+	margin-bottom: -1.4%;
+	box-shadow: -5px -2px 20px 0px #00000040;
+	content: url('../images/barometer.png');
+	max-width: 350px;
+	max-height: 220px;
+
+}
+.tab-active {
+	display: none;
+}
+.content-active {
+	display: block;
+}
+#tab-1, #tab-1 .tab-border {
+	box-shadow: inset 0px -5px 5px #00000014;
+}
+#tab-2, #tab-2 .tab-border {
+	box-shadow: inset 0px -5px 5px #00000014;
+}
+#tab-3, #tab-3 .tab-border {
+	box-shadow: inset 0px -5px 5px #00000014;
+}
+#tab-4, #tab-4 .tab-border {
+	box-shadow: inset 0px -5px 5px #00000014;
+}
+#tab-6, #tab-6 .tab-border {
+	box-shadow: inset 0px 5px 5px #00000014;
 }
 /* End of Fourth section */
 
-/* Fifth section */
-/* .partners { */
-/*   color: #6a6a6a; */
-/*   text-align: center; */
-/*   padding-top: 105px; */
-/*   padding-bottom: 105px; */
-/*   font-size: 20px; */
-/* } */
-/* .partners h1 { */
-/*   font-weight: 200; */
-/*   font-size: 55px; */
-/* } */
-/* .partners p { */
-/*   margin-top: 20px; */
-/* } */
-/* .partners .row { */
-/*   margin-top: 20px; */
-/* } */
-/* .partners .w-100 { */
-/*   margin-top: 50px; */
-/* } */
-/* .dp-logo { */
-/*   max-width: 100px; */
-/*   content: url('../images/dp.svg'); */
-/*   float: left; */
-/*   margin-left: 15%; */
-/* } */
-/* .ukaid-logo { */
-/*   max-width: 75px; */
-/*   content: url('../images/ukaid.png'); */
-/*   float: right; */
-/*   margin-right: 20%; */
-/* } */
-/* .canada-logo { */
-/*   max-width: 300px; */
-/*   content: url('../images/canada.svg'); */
-/*   position: relative; */
-/*   top: 25%; */
-/* } */
-/* .irdc-logo { */
-/*   max-width: 300px; */
-/*   content: url('../images/irdc.png'); */
-/* } */
-/* .wb-logo { */
-/*   max-width: 300px; */
-/*   content: url('../images/world_bank-logo.png'); */
-/* } */
-/* End of Fifth section */
 /* Fifth section */
 .partners {
   color: #6a6a6a;
@@ -205,6 +230,85 @@ html, body {
   .inner {
     max-width: 70%;
   }
+
+	.tabs {
+		height: 75%;
+		flex-direction: row;
+	}
+	.tabs h1 {
+		font-size: 30px;
+	}
+	.tab {
+		flex-direction: column-reverse;
+		max-width: 5.2%;
+		padding: 0;
+	}
+	.tab-border {
+		font-size: 20px;
+	}
+	.tab-title {
+		transform: rotate(-90deg);
+		white-space: nowrap;
+		padding-left: 30px;
+	}
+	.tab-content {
+		box-shadow: -5px 0px 5px #00000014, 5px 0px 5px #00000014;
+	}
+	.tab-text {
+		display: inline;
+		float: left;
+		max-width: 30%;
+		text-align: right;
+	}
+	.tab-content h1 {
+		font-size: 50px;
+		font-weight: 200;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	.tab-content img {
+		position: absolute;
+		float: right;
+		margin-right: 20px;
+		margin-bottom: 0%;
+		display: inline;
+		max-width: 360px;
+		max-height: 230px;
+		right: 0;
+		bottom: 0;
+	}
+	.tab-content-inner {
+		padding-left: 5%;
+		padding-top: 15px;
+		text-align: unset;
+		font-size: 13px;
+	}
+	.tab-content-border {
+		height: 40px;
+		line-height: 40px;
+		width: 100%;
+		position: absolute;
+		box-shadow: -5px 0px 5px #00000014, 0px 10px 0px #f07125;
+	}
+	.tab-title-border {
+		height: 40px;
+		width: 100%;
+	}
+	#tab-1, #tab-1 .tab-border {
+		box-shadow: inset -5px 0px 5px #00000014;
+	}
+	#tab-2, #tab-2 .tab-border {
+		box-shadow: inset -5px 0px 5px #00000014;
+	}
+	#tab-3, #tab-3 .tab-border {
+		box-shadow: inset -5px 0px 5px #00000014;
+	}
+	#tab-4, #tab-4 .tab-border {
+		box-shadow: inset -5px 0px 5px #00000014;
+	}
+	#tab-6, #tab-6 .tab-border {
+		box-shadow: inset 5px 0px 5px #00000014;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -218,6 +322,46 @@ html, body {
   .dp-logo, .ukaid-logo {
     max-height: 80px;
   }
+
+	.tabs {
+		height: 95%;
+	}
+	.tab-border {
+		font-size: 30px;
+	}
+	.tab h1 {
+		padding-left: 60px;
+	}
+	.tab-title {
+		padding-left: 20px;
+	}
+	.tab-title-border {
+		height: 50px;
+		width: 100%;
+	}
+	.tab-content-border {
+		font-size: 30px;
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+	}
+	.tab-content-inner {
+		margin-top: 2%;
+	}
+	.tab-content-inner h1 {
+		font-size: 80px;
+		margin-bottom: 4%;
+	}
+	.tab-content img {
+		position: initial;
+		max-width: 560px;
+		max-height: 430px;
+		margin-right: 30px;
+	}
+	.tab-text {
+		font-size: 17px;
+		margin-top: 20px;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -244,6 +388,78 @@ html, body {
   .ukaid-logo {
     margin-right: 15%;
   }
+
+	.tabs {
+		height: 95%;
+	}
+	.tab-border {
+		font-size: 30px;
+	}
+	.tab {
+		max-width: 70px;
+	}
+	.tab h1 {
+		padding-left: 60px;
+	}
+	.tab-title {
+		padding-left: 20px;
+	}
+	.tab-title-border {
+		height: 50px;
+		width: 100%;
+	}
+	.tab-content-border {
+		font-size: 30px;
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+	}
+	.tab-content-inner {
+		margin-top: 2%;
+	}
+	.tab-content-inner h1 {
+		font-size: 80px;
+		margin-bottom: 4%;
+	}
+	.tab-content img {
+		position: initial;
+		max-width: 560px;
+		max-height: 430px;
+		margin-right: 30px;
+	}
+	.tab-text {
+		font-size: 17px;
+		margin-top: 20px;
+	}
+
+	.tab-title-border {
+		width: 100%;
+		height: 50px;
+	}
+	.tab-content-border {
+		line-height: 50px;
+		width: 100%;
+		height: 50px;
+	}
+	.tab-content-inner {
+		padding-left: 5%;
+	}
+	.tab-content p {
+		font-size: 17px;
+	}
+	.tab-content-border p {
+		font-size: 30px;
+	}
+	.tab-content h1 {
+		font-size: 80px;
+	}
+	.tab-content img {
+		min-width: 560px;
+		min-height: 430px;
+		position: absolute;
+		margin-right: 50px;
+		bottom: 0;
+	}
 }
 
 /* 4k screens or higher */
@@ -267,4 +483,62 @@ html, body {
   .ukaid-logo {
     min-height: 120px;
   }
+
+	.tab {
+		max-width: 150px;
+	}
+	.tab h1 {
+		padding-left: 60px;
+		font-size: 60px;
+	}
+	.tab-title-border {
+		height: 100px;
+		width: 100%;
+	}
+	.tab-content-border {
+		font-size: 30px;
+		width: 100%;
+		height: 100px;
+		line-height: 100px;
+	}
+	.tab-content-inner {
+		margin-top: 2%;
+	}
+	.tab-content-inner h1 {
+		font-size: 100px;
+		margin-bottom: 4%;
+	}
+	.tab-content img {
+		position: initial;
+		max-width: 900px;
+		max-height: 730px;
+		margin-right: 90px;
+	}
+	.tab-text {
+		font-size: 17px;
+		margin-top: 20px;
+	}
+
+	.tab-title-border {
+		width: 100%;
+		height: 70px;
+	}
+	.tab-content-border {
+		line-height: 70px;
+		width: 100%;
+		height: 70px;
+	}
+	.tab-content-inner p {
+		font-size: 35px;
+		max-width: 40%;
+	}
+	.tab-content h1 {
+		font-size: 80px;
+	}
+	.tab-content img {
+		min-width: 730px;
+		min-height: 500px;
+		position: absolute;
+		bottom: 0;
+	}
 }
