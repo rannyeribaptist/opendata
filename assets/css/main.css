@@ -5,6 +5,51 @@ html, body {
   height: 100%;
   color: white;
 }
+
+/* navbar */
+nav {
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+}
+nav a {
+	background-color: #d4771d;
+	padding: 10px 15px 10px 15px;
+}
+nav i {
+	color: white;
+	padding-top: 10px;
+}
+nav .column {
+	display: none;
+	padding-left: 48.5px;
+	padding-top: 7.5px;
+}
+nav .row {
+	align-items: flex-end;
+	max-width: 100%;
+}
+nav .row div {
+	background-color: #171616ab;
+	padding: 5px 10px 0px 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	height: 100%;
+}
+nav .row div:hover {
+	background-color: #ba4568;
+	transition: 0.2s;
+}
+nav .row h2{
+	font-weight: 300;
+	font-size: 20px;
+}
+nav .row h5{
+	font-weight: 300;
+	font-size: 14px;
+}
+/* end of navbar */
+
 /* First section */
 .presentation {
   background: linear-gradient(to bottom, #3c8e89, #317672);
@@ -374,6 +419,15 @@ html, body {
 	#tab-6, #tab-6 .tab-border {
 		box-shadow: inset 5px 0px 5px #00000014;
 	}
+	nav .row h2{
+		font-size: 25px;
+	}
+	nav .row h5{
+		font-size: 18px;
+	}
+	nav .row div {
+		padding: 15px 25px 10px 25px;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -449,6 +503,10 @@ html, body {
 	.tab-text {
 		font-size: 17px;
 		margin-top: 20px;
+	}
+
+	nav .row h5{
+		font-size: 15px;
 	}
 }
 
@@ -556,6 +614,13 @@ html, body {
 		margin-right: 50px;
 		bottom: 0;
 	}
+
+	nav .row h2{
+		font-size: 30px;
+	}
+	nav .row h5{
+		font-size: 18px;
+	}
 }
 
 /* 4k screens or higher */
@@ -655,5 +720,15 @@ html, body {
 		min-height: 500px;
 		position: absolute;
 		bottom: 0;
+	}
+
+	nav .row h2{
+		font-size: 50px;
+	}
+	nav .row h5{
+		font-size: 30px;
+	}
+	nav .row div {
+		padding: 20px 40px 15px 40px;
 	}
 }

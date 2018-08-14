@@ -184,7 +184,6 @@ function drawChart(data) {
 
 drawChart([{'date': 2014, 'value': 0}, {'date': 2015, 'value': 10}, {'date': 2016, 'value': 29}, {'date': 2017, 'value': 37}]);
 
-// TODO: to make the excedent part of the graph, we gonna create a new line,
-// with new area, and takes the same data + the last dot. like that, we
-// have the excedent dashed line, and the excedent graph area, that extends
-// the entire screen
+$('nav').on('click', function() {
+	$('.column').fadeToggle(300);
+})
