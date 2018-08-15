@@ -55,7 +55,7 @@ nav .row h5{
   background: linear-gradient(to bottom, #3c8e89, #317672);
   min-height: 115% !important;
   text-align: center;
-  padding-top: 7%;
+  padding-top: 25%;
 }
 .presentation .inner {
   max-width: 50% !important;
@@ -67,7 +67,7 @@ nav .row h5{
 }
 .logo {
   content: url('../images/logo.png');
-  max-width: 50%;
+  max-width: 70%;
 }
 /* End of First section */
 
@@ -457,9 +457,13 @@ nav .row h5{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .logo {
-    max-width: 50%;
-  }
+	.presentation {
+		padding-bottom: 5%;
+		padding-top: 10%;
+	}
+  /* .logo { */
+  /*   max-width: 50%; */
+  /* } */
   .slide {
     font-size: 20px;
   }
@@ -670,6 +674,9 @@ nav .row h5{
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+	.presentation {
+		padding-top: 7%;
+	}
   .logo {
     margin-bottom: 10px;
   }
@@ -790,6 +797,11 @@ nav .row h5{
   .slide {
     font-size: 37px;
   }
+
+	nav a {
+		font-size: 35px;
+		padding: 15px 20px 15px 20px;
+	}
 
 	.graph .top {
 		padding-left: 2%;
