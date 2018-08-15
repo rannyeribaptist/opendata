@@ -128,7 +128,165 @@ nav .row h5{
 /* Third section */
 .map {
   background: linear-gradient(to bottom, #3c8e89, #317672);
-  height: 40%;
+  height: 150%;
+	position: relative;
+}
+.map .info {
+	display: none;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	background-color: #1d4b4bb8;
+	padding: 10px 60px 10px 60px;
+	margin-top: 60px;
+	max-width: 40%;
+	box-shadow: 0px 0px 10px #00000082;
+	z-index: 10;
+	visibility: show;
+}
+.map .info.active {
+	display: block;
+}
+.map .info.hide {
+	display: block;
+	visibility: hidden;
+}
+.jvectormap-container {
+	transform: translateY(-10%);
+}
+.jvectormap-marker {
+	display: none;
+}
+.map .info h3 {
+	font-weight: 300;
+	margin-bottom: 0;
+}
+.map .info small {
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.map .info p {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	font-size: 13px;
+}
+.map .info h1 {
+	color: #1b4744;
+	transform: rotate(-90deg) translate(45px);
+	font-weight: 300;
+	left: 0;
+	position: absolute;
+}
+.map .africa {
+	padding-bottom: 146px;
+}
+.map .latin-america {
+	padding-bottom: 287px;
+}
+.map .asia {
+	padding-bottom: 100px;
+}
+.map .carribean {
+	padding-bottom: 220px;
+}
+.map .eca {
+	padding-bottom: 90px;
+}
+.map .middle-east {
+	padding-bottom: 250px;
+}
+.map .info h6 {
+	font-weight: 200;
+	font-size: 13px;
+	margin: 0;
+	margin-left: 10px;
+}
+.map .info .leader-name {
+	margin-left: 10px;
+}
+.map .info img {
+	content: url('https://ucab4030be51fabf80cede710fb7.previews.dropboxusercontent.com/p/thumb/AALzmVzqDN6tTpomekvQXT-HzTD2iTxwnOyoZww_IMww3g4GT5Ab8e0iPkqF5BTUmaIh8l-6LUXIhc5FbbUvXe2nnjq_FIX7UZk0b7nGSsHoaPC9KYIfbobpmX-vXJEXR8YHIDCrtU9jRa16tr8c825yt54Q3WvSU0LlMurz77s-_wuTnI3x11BI_qSnb_yORSy0gQ6EV8YteQLCcIlTkTdnG9cxRpinpG0zkQFviM-q9A/p.jpeg?size=1280x960&size_mode=3');
+	width: 70px;
+	height: 70px;
+	border-radius: 100px;
+	margin-right: 15px;
+}
+.map .info i {
+	font-size: 25px;
+	padding: 50px 15px 50px 15px;
+	color: #ffffff78;
+}
+.map .info i:hover {
+	color: white;
+}
+.map .map-buttons, .map-text, .map-toggle {
+	display: flex;
+	justify-content: center;
+}
+.map .map-buttons {
+	position: absolute;
+	transform: translateX(32.5%);
+	z-index: 10;
+	display: none;
+}
+.map .map-buttons-filters {
+	transform: translateX(65%);
+	display: none;
+	max-width: 50%;
+	position: absolute;
+	z-index: 10;
+}
+.map .buttons-active {
+	display: block !important;
+}
+.map .map-text p {
+	max-width: 59.5%;
+}
+.map .map-toggle {
+	justify-content: left;
+	margin-left: 20%;
+	padding-top: 5%;
+	align-items: flex-end;
+}
+.map .map-toggle h1 {
+	font-weight: 200;
+	margin-right: 20px;
+	color: #61b0ab;
+}
+.map .map-toggle .title-active {
+	font-size: 55px;
+	color: white;
+}
+.map button {
+	background: #337972;
+	border: none;
+	color: white;
+	padding: 10px 15px 10px 15px;
+	margin-left: 3px;
+	margin-right: 3px;
+	font-weight: 300;
+}
+.map button:focus {
+	outline: none;
+}
+.map .button-active {
+	background-color: #1d4b4bb8 !important;
+	border: none;
+}
+.education {
+	background-color: #ec5563 !important;
+}
+.agriculture {
+	background-color: #41aef0 !important;
+}
+.gender {
+	background-color: #f7b534 !important;
+}
+.anti-corruption {
+	background-color: #1e5468 !important;
+}
+.cities {
+	background-color: #f07125 !important;
 }
 /* End of Third section */
 
