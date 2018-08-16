@@ -123,6 +123,30 @@ nav .row h5{
 	position: absolute;
 	left: 0;
 }
+.area {
+	transform: scale(0, 0);
+}
+.data-line {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+}
+.projection-line {
+	stroke-dashoffset: 1000;
+}
+.graph:hover .data-line {
+	animation: lineup 5s linear forwards;
+	animation-iteration-count: 1;
+}
+.graph:hover .projection-line {
+	animation: stroking 1s linear forwards;
+	animation-delay: 2.2s;
+	animation-iteration-count: 1;
+}
+.graph:hover .area {
+	animation: showup 1s linear forwards;
+	animation-delay: 3.2s;
+	animation-iteration-count: 1;
+}
 /* End of Second section */
 
 /* Third section */
@@ -252,6 +276,8 @@ nav .row h5{
 	font-weight: 200;
 	margin-right: 20px;
 	color: #61b0ab;
+	transition: 0.5s;
+	cursor: pointer;
 }
 .map .map-toggle .title-active {
 	font-size: 55px;
@@ -265,6 +291,7 @@ nav .row h5{
 	margin-left: 3px;
 	margin-right: 3px;
 	font-weight: 300;
+	cursor: pointer;
 }
 .map button:focus {
 	outline: none;
@@ -900,5 +927,28 @@ nav .row h5{
 	}
 	nav .row div {
 		padding: 20px 40px 15px 40px;
+	}
+}
+
+@keyframes lineup {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes stroking {
+	to {
+		stroke-dashoffset: 0;
+		stroke-dasharray: 3;
+	}
+}
+@keyframes showup {
+	0% {
+		transform: scale(0.0, 1);
+	}
+	50% {
+		transform: scale(0.5, 1);
+	}
+	100% {
+		transform: scale(1, 1);
 	}
 }

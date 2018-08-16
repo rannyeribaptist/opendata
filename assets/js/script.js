@@ -108,6 +108,8 @@ function drawChart(data) {
 		.attr("stroke-linejoin", "round")
 		.attr("stroke-linecap", "round")
 		.attr("stroke-width", 2)
+		.attr("stroke-dasharray", 1000)
+		.attr("stroke-dashoffset", 1000)
 		.attr("d", line);
 
 	// Excedent area
@@ -134,14 +136,13 @@ function drawChart(data) {
 		.attr("fill", "none")
 		.attr("stroke", "#e25160")
 		.attr("stroke-width", 2)
-		.attr("stroke-dasharray", 2)
+		.attr("stroke-dasharray", 1000)
 		.attr("d", line);
 
 	// Data dots
 	g.selectAll("line-circle")
 		.data(data)
 		.enter().append("circle")
-		.attr("class", "data-circle")
 		.attr("class", function(d) { return d.value;})
 		.attr("r", 6)
 		.attr("cx", function(d) { return x(d.date);  })
